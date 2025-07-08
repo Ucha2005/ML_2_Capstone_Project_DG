@@ -38,7 +38,7 @@ It includes thorough preprocessing, robust evaluation (including confidence inte
 ## 📊 My Final Results
 | Model        | Validation Accuracy | Test Accuracy |
 |--------------|---------------------|----------------|
-| Custom CNN   | 86.5%                | 84.8%          |
+| Custom CNN   | 86.5%                | 84.7%          |
 | ResNet50     | 93.9%                | 94.1%          |
 
 ## 🛠️ Requirements
