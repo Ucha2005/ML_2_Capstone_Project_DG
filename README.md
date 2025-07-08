@@ -18,11 +18,11 @@ This deep learning capstone project classifies images from a **cleaned 6 class c
 - A custom CNN model built from scratch
 - A fine-tuned ResNet50 transfer learning model
 - Data construction details:
--https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest 
+- https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest 
 From dataset link above I picked 4 major classes: Dent,scratches , Tire_Flat,Glass_Shatter, Lamp broken. Note I unified dents and scratches into "Surface_Damage(Dents, Scratches)" class.
--https://www.kaggle.com/datasets/prajwalbhamere/car-damage-severity-dataset
+- https://www.kaggle.com/datasets/prajwalbhamere/car-damage-severity-dataset
 From dataset link above I picked Severe damage class and used as "significant_damage" in my dataset.
--https://www.kaggle.com/datasets/samwash94/comprehensive-car-damage-detection
+- https://www.kaggle.com/datasets/samwash94/comprehensive-car-damage-detection
 From the link above I picked "R_Normal: Rear view of undamaged cars" , "F_Normal: Front view of undamaged cars" and unified them as "No_Damage" class in my dataset. 
 
 It includes thorough preprocessing, robust evaluation (including confidence intervals), and external image testing.
