@@ -42,4 +42,4 @@ It includes thorough preprocessing, robust evaluation (including confidence inte
 | ResNet50     | 93.9%                | 94.1%          |
 
 ## 🛠️ Requirements
-Install the required Python packages if you check it out on your device
+Install the required Python packages if you would like to try it out on your device.
