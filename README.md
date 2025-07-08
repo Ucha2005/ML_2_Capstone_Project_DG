@@ -1,7 +1,7 @@
 
 # Car Damage Classification with Custom CNN and ResNet50
 The files necessary to completely run the notebook:
-**Download the file necessary to run the CNN Model:**
+**Download the file necessary to run the CNN Model with the following link:**
 🔗 **[Download Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1898L8prHBT9T8uW8jEIEEqsCF0PQhd6T/view?usp=drive_link)**. 
 Download the file necessary for checking data preprocessing , its for transparency you may even not consider to reproduce it,**1st file used:**
 **[Download initial Dataset I constructed (Google Drive)](https://drive.google.com/file/d/1WoaTT2RAeIpiiaOwghFmpRi6lbtu-P-Y/view?usp=drive_link)**. 
