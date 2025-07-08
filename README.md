@@ -2,12 +2,12 @@
 # Car Damage Classification with Custom CNN and ResNet50
 The files necessary to completely run the notebook:
 Download the file necessary to run the CNN Model:
-🔗 **[Download Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1898L8prHBT9T8uW8jEIEEqsCF0PQhd6T/view?usp=drive_link)**
+🔗 **[Download Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1898L8prHBT9T8uW8jEIEEqsCF0PQhd6T/view?usp=drive_link)**. 
 Download the file necessary for checking data preprocessing , its for transparency you may even not consider to reproduce it, 1st file used:
-**[Download initial Dataset I constructed (Google Drive)](https://drive.google.com/file/d/1WoaTT2RAeIpiiaOwghFmpRi6lbtu-P-Y/view?usp=drive_link)**
+**[Download initial Dataset I constructed (Google Drive)](https://drive.google.com/file/d/1WoaTT2RAeIpiiaOwghFmpRi6lbtu-P-Y/view?usp=drive_link)**. 
 2nd file used in preprocessing:
-**[Download Train Set Which is Going to be shown how it was augmented (Google Drive)](https://drive.google.com/file/d/1MJy9WBvSyDxwd0j72zPs9Mhqi3lBcjrv/view?usp=drive_link)**
-Important note! To easily run the ipynb file as it was initially created in Google Colab Free version you'd need to upload the files I provided with the links above on drive which is connected to your Google Colab account (If you decide to test it there). Files should not be uploaded as a folder, they should directly be placed in "My Drive" as zip files as they are to make sure the paths defined in the codes work properly! So, there should be 3 separate zip files on your drive uploaded with no modifications. If you are not interested in data preprocessing transparency part, you can use only the final dataset I used in the 1st link above which runs the models. 
+**[Download Train Set Which is Going to be shown how it was augmented (Google Drive)](https://drive.google.com/file/d/1MJy9WBvSyDxwd0j72zPs9Mhqi3lBcjrv/view?usp=drive_link)**. 
+**Important note!** To easily run the ipynb file as it was initially created in Google Colab Free version you'd need to upload the files I provided with the links above on drive which is connected to your Google Colab account (If you decide to test it there). Files should not be uploaded as a folder, they should directly be placed in "My Drive" as zip files as they are to make sure the paths defined in the codes work properly! So, there should be 3 separate zip files on your drive uploaded with no modifications. If you are not interested in data preprocessing transparency part, you can use only the final dataset I used in the 1st link above which runs the models. 
 
 So, ipynb file in the 1st part shows how generally Initial dataset was cleaned (its no necessary to run for Model, it has demonstration purposes for transparency). 2nd part is the actual Model(s) and Analysis. 
 
@@ -42,4 +42,4 @@ It includes thorough preprocessing, robust evaluation (including confidence inte
 | ResNet50     | 93.9%                | 94.1%          |
 
 ## 🛠️ Requirements
-Install the required Python packages if you check it on your device
+Install the required Python packages if you check it out on your device
