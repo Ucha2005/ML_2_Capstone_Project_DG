@@ -53,7 +53,7 @@ Car insurance agencies face **losses due to human error or intentional fraud**. 
 
 ## 🧠 Key Features
 
-- ✅ Deduplication using **ImageHash**
+- ✅ Deduplication/cleaning from similar redundant images using **ImageHash**
 - ✅ Balanced train set with **manual validation/test splits**
 - ✅ **Augmentation only** on the train set to simulate real-world variability
 - ✅ Evaluation:
