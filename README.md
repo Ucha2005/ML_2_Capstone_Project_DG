@@ -1,45 +1,90 @@
 
-# Car Damage Classification with Custom CNN and ResNet50
-The files necessary to completely run the notebook:
-**Download the file necessary to run the CNN Model with the following link:**
-🔗 **[Download Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1898L8prHBT9T8uW8jEIEEqsCF0PQhd6T/view?usp=drive_link)**. 
-Download the file necessary for checking data preprocessing , its for transparency you may even not consider to reproduce it,**1st file used:**
-**[Download initial Dataset I constructed (Google Drive)](https://drive.google.com/file/d/1WoaTT2RAeIpiiaOwghFmpRi6lbtu-P-Y/view?usp=drive_link)**. 
-**2nd file used in preprocessing:**
-**[Download Train Set Which is Going to be shown how it was augmented (Google Drive)](https://drive.google.com/file/d/1MJy9WBvSyDxwd0j72zPs9Mhqi3lBcjrv/view?usp=drive_link)**. 
-**Important note!** To easily run the ipynb file, as it was initially created in Google Colab Free version, you'd need to upload the files I provided with the links above on drive which is connected to your Google Colab account (If you decide to test it there). **Files should not be uploaded as a folder, they should directly be placed/uploaded in "My Drive" as zip files as they are to make sure the paths defined in the codes work properly!** So, there should be 3 separate zip files on your drive uploaded with no modifications. If you are not interested in data preprocessing transparency part, you can use only the final dataset I used in the 1st link above which runs the models. 
-
-So, ipynb file in the 1st part shows how generally Initial dataset was cleaned (its no necessary to run for Model, it has demonstration purposes for transparency). 2nd part is the actual Model(s) and Analysis. 
+# Car Damage Classification with Custom CNN and ResNet50  
+*(Please read the following paragraphs containing vital info about the project)*
 
 ---
 
-## 📌 Project Overview 
-This deep learning capstone project classifies images from a **cleaned 6 class car damage classification dataset** using:
-- A custom CNN model built from scratch
-- A fine-tuned ResNet50 transfer learning model
-- Data construction details:
-- https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest 
-From that 1st dataset link I picked 4 major classes: Dent,scratches , Tire_Flat,Glass_Shatter, Lamp broken. Note I unified dents and scratches into "Surface_Damage(Dents, Scratches)" class.
-- https://www.kaggle.com/datasets/prajwalbhamere/car-damage-severity-dataset
-From this 2nd dataset link I picked Severe damage class and used as "significant_damage" in my dataset.
-- https://www.kaggle.com/datasets/samwash94/comprehensive-car-damage-detection
-From that 3rd dataset link I picked "R_Normal: Rear view of undamaged cars" , "F_Normal: Front view of undamaged cars" and unified them as "No_Damage" class in my dataset. 
+## 📦 Required Files to Run the Notebook
 
-It includes thorough preprocessing, robust evaluation (including confidence intervals), and external image testing.
+1. 🔗 **[Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1898L8prHBT9T8uW8jEIEEqsCF0PQhd6T/view?usp=drive_link)**  
+   → Used directly to train and evaluate both models.
+
+2. 🔗 **[Initial Dataset for Cleaning Demonstration (Google Drive)](https://drive.google.com/file/d/1WoaTT2RAeIpiiaOwghFmpRi6lbtu-P-Y/view?usp=drive_link)**  
+   → Used in the first part of the notebook to show how the dataset was built (for transparency only).
+
+3. 🔗 **[Train Set Shown with Augmentation (Google Drive)](https://drive.google.com/file/d/1MJy9WBvSyDxwd0j72zPs9Mhqi3lBcjrv/view?usp=drive_link)**  
+   → Used to demonstrate offline data augmentation logic.
+
+> ⚠️ **Important:**  
+> To reproduce this in **Google Colab**, upload all 3 `.zip` files **directly to "My Drive"**, **not inside folders**, and do not rename them. This ensures the code paths work correctly.
+
+If you're only interested in running the models, **you can skip the first two and just use the Final Dataset.**
+
+---
+
+## 📌 Project Overview
+
+This deep learning capstone project classifies car images into **6 damage categories**, using:
+
+- A **custom CNN model** built from scratch
+- A **fine-tuned ResNet50** model (transfer learning)
+
+### 📁 Dataset Construction
+Combined and curated from multiple Kaggle datasets:
+
+- [Ripik Hackfest Dataset](https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest)  
+  → Used `Dent`, `Scratches`, `Tire_Flat`, `Glass_Shatter`, `Lamp_Broken`.  
+  → `Dent` + `Scratches` were merged into **Surface_Damage**.
+
+- [Car Damage Severity Dataset](https://www.kaggle.com/datasets/prajwalbhamere/car-damage-severity-dataset)  
+  → Used `Severe Damage` → renamed to **Significant_Damage**
+
+- [Comprehensive Car Damage Dataset](https://www.kaggle.com/datasets/samwash94/comprehensive-car-damage-detection)  
+  → Used `F_Normal` and `R_Normal` → unified into **No_Damage**
+
+---
+
+## 💡 Inspiration
+
+I aimed to apply image classification to a real-world problem in **economics and insurance**.  
+Car insurance agencies face **losses due to human error or intentional fraud**. My model can be used as a **verification tool** — if the employee's report disagrees with the model prediction, the case can be **flagged for secondary review**. This reduces risk and cost from misreporting and helps streamline damage verification.
+
+---
 
 ## 🧠 Key Features
-- Cleaning via perceptual image hashing (`ImageHash`)
-- Offline manual dataset splitting into Train/Validation/Test sets
-- Augmentation applied only to training set for generalization
-- Evaluation using confusion matrix, per-class accuracy, bootstrap and binomial confidence intervals
-- External (out-of-sample) image tested on both models
-- Comparison between scratch CNN and ResNet50
 
-## 📊 My Final Results
+- ✅ Deduplication using **ImageHash**
+- ✅ Balanced train set with **manual validation/test splits**
+- ✅ **Augmentation only** on the train set to simulate real-world variability
+- ✅ Evaluation:
+  - Per-class accuracy
+  - Confusion matrix
+  - Bootstrap 95% CI for overall accuracy
+  - Binomial CI for per-class accuracy
+- ✅ **External image tested** on both models to assess generalization
+
+---
+
+## 📊 Final Results
+
 | Model        | Validation Accuracy | Test Accuracy |
 |--------------|---------------------|----------------|
 | Custom CNN   | 86.5%                | 84.7%          |
 | ResNet50     | 93.9%                | 94.1%          |
 
+---
+
+## 🔧 Potential Improvements
+
+- Add additional damage types (e.g. interior damage, missing parts)
+- Increase training data size per class for better generalization
+- Expand validation and test sets for **higher statistical reliability**
+- Use the model as an **automated classifier**, not just a verification tool
+
+---
+
 ## 🛠️ Requirements
-Install the required Python packages if you would like to try it out on your device.
+
+Install required packages from `requirements.txt`:
+```bash
+pip install -r requirements.txt
