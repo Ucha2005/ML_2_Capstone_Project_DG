@@ -18,7 +18,7 @@
 > ⚠️ **Important:**  
 > To reproduce this in **Google Colab**, upload all 3 `.zip` files **directly to "My Drive"**, **not inside folders**, and do not rename them. This ensures the code paths work correctly.
 
-If you're only interested in running the models, **you can skip the first two and just use the Final Dataset.**
+If you're only interested in running the models, **you can skip the data preprocessing "First part" in the notebook and you now longer need raw datasets provided in the 2nd and 3rd links, just use the 1st link the "Final Dataset Used For CNN model".**
 
 ---
 
