@@ -61,7 +61,7 @@ Car insurance agencies face **losses due to human error or intentional fraud**. 
   - Confusion matrix
   - Bootstrap 95% CI for overall accuracy
   - Binomial CI for per-class accuracy
-- ✅ **External image tested** on both models to assess generalization
+- ✅ **External image tested** on both models to assess generalization apart from Validation and Test sets to see how confidently the model classifies a single picture.
 
 ---
 
