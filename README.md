@@ -16,7 +16,7 @@
    → Used to demonstrate offline data augmentation logic.
 
 > ⚠️ **Important:**  
-> The ipynb file was created originally in **Google Colab** free version, so to reproduce this in **Google Colab**, upload all 3 `.zip` files **directly to your google drive which is connected to your colab account , it should be on "My Drive"** directly, **not inside folders**, and do not rename them. This ensures the code paths work correctly.
+> The ipynb file was created originally in **Google Colab** free version, so to reproduce this in **Google Colab**, upload all 3 `.zip` files **directly to your google drive which is connected to your colab account , they should be on "My Drive"** directly, **not inside folders**, and do not rename them. This ensures the code paths work correctly.
 
 If you're only interested in running the models, **you can skip the data preprocessing "First part" in the notebook and in that case you will no longer need raw datasets provided in the 2nd and 3rd links, just use the 1st link the "Final Dataset Used For CNN model".**
 
