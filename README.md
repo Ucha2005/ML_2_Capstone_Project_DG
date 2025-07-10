@@ -32,14 +32,14 @@ This deep learning capstone project classifies car images into **6 damage catego
 ### 📁 Dataset Construction
 Combined and curated from multiple Kaggle datasets:
 
-- [Vehicle Damage Insurance Verification](https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest)  
+- 🔗[Vehicle Damage Insurance Verification](https://www.kaggle.com/datasets/sudhanshu2198/ripik-hackfest)  
   → Used `Dent`, `Scratches`, `Tire_Flat`, `Glass_Shatter`, `Lamp_Broken`.  
   → `Dent` + `Scratches` were merged into **Surface_Damage**.
 
-- [Car Damage Severity Dataset](https://www.kaggle.com/datasets/prajwalbhamere/car-damage-severity-dataset)  
+- 🔗[Car Damage Severity Dataset](https://www.kaggle.com/datasets/prajwalbhamere/car-damage-severity-dataset)  
   → Used `Severe Damage` → renamed to **Significant_Damage**
 
-- [Comprehensive Car Damage Dataset](https://www.kaggle.com/datasets/samwash94/comprehensive-car-damage-detection)  
+- 🔗[Comprehensive Car Damage Dataset](https://www.kaggle.com/datasets/samwash94/comprehensive-car-damage-detection)  
   → Used `F_Normal` and `R_Normal` → unified into **No_Damage**
 
 ---
