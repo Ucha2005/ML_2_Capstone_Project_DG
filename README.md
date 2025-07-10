@@ -75,7 +75,7 @@ Car insurance agencies face **losses due to human error or intentional fraud**. 
 ---
 
 ## 🔧 Potential Improvements
-
+if I had access to more data I would definitely:
 - Add additional damage types (e.g. interior damage, missing parts)
 - Increase training data size per class for better generalization
 - Expand validation and test sets for **higher statistical reliability**
