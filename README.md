@@ -45,14 +45,14 @@ Combined and curated from multiple Kaggle datasets:
 
 ---
 
-## 💡 Inspiration
+## Inspiration
 
 I aimed to apply image classification to a real-world problem in **economics and insurance**.  
 Car insurance agencies face **losses due to human error or intentional fraud**. My model can be used as a **verification tool** — if the employee's report disagrees with the model prediction, the case can be **flagged for secondary review**. This reduces risk and cost from misreporting and helps streamline damage verification.
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 - ✅ Deduplication/cleaning from similar redundant images using **ImageHash**
 - ✅ Balanced train set with **manual validation/test splits**
