@@ -14,7 +14,7 @@
 
 3. 🔗 **[Train Set Shown with Augmentation (Google Drive)](https://drive.google.com/file/d/1GE4Wx65wWSVcS4kripzmLJhxc-iyqZYr/view?usp=sharing)**  
    → Used to demonstrate offline data augmentation logic.
-
+**The processed datasets are shared privately for academic/reproducibility purposes. Original datasets are referenced below and remain subject to their respective licenses**
 > ⚠️ **Important:**  
 > The ipynb file was created originally in **Google Colab** free version, so to reproduce this in **Google Colab**, upload all 3 `.zip` files **directly to your google drive which is connected to your colab account , they should be on "My Drive"** directly, **not inside folders**, and do not rename them. This ensures the code paths work correctly.
 
