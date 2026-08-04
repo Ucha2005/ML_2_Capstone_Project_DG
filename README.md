@@ -6,13 +6,13 @@
 
 ## 📦 Required Files to Run the Notebook
 
-1. 🔗 **[Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1898L8prHBT9T8uW8jEIEEqsCF0PQhd6T/view?usp=drive_link)**  
+1. 🔗 **[Final Dataset Used For CNN Model (Google Drive)](https://drive.google.com/file/d/1qRNSULEanvpbr4iQdsq9zbZZkMtGpCWo/view?usp=sharing)**  
    → Used directly to train and evaluate both models.
 
-2. 🔗 **[Initial Dataset for Cleaning Demonstration (Google Drive)](https://drive.google.com/file/d/1WoaTT2RAeIpiiaOwghFmpRi6lbtu-P-Y/view?usp=drive_link)**  
+2. 🔗 **[Initial Dataset for Cleaning Demonstration (Google Drive)](https://drive.google.com/file/d/1tnCOk6VvujeYsCq3VFcjOFsPALPb6Jo3/view?usp=sharing)**  
    → Used in the first part of the notebook to show how the dataset was built (for transparency only).
 
-3. 🔗 **[Train Set Shown with Augmentation (Google Drive)](https://drive.google.com/file/d/1MJy9WBvSyDxwd0j72zPs9Mhqi3lBcjrv/view?usp=drive_link)**  
+3. 🔗 **[Train Set Shown with Augmentation (Google Drive)](https://drive.google.com/file/d/1GE4Wx65wWSVcS4kripzmLJhxc-iyqZYr/view?usp=sharing)**  
    → Used to demonstrate offline data augmentation logic.
 
 > ⚠️ **Important:**  
